@@ -20,9 +20,10 @@ module StaticMatic
       @current_page = nil
       @current_file_stack = []
       @base_dir = base_dir
+      p configuration
       @src_dir = File.join(@base_dir, "src")
       @site_dir = File.join(@base_dir, "site")
-      
+
       if File.exists?(File.join(@src_dir, "layouts", "application.haml"))
         puts "DEPRECATION: layouts/application.haml will be renamed to layouts/default.haml in 0.12.0"
         @default_layout = "application"

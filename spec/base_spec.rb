@@ -8,6 +8,7 @@ describe "StaticMatic::Base" do
   it "should set initial configuration settings" do
     @staticmatic.configuration.use_extensions_for_page_links.should == true
     @staticmatic.configuration.preview_server_port.should == 3000
+    @staticmatic.configuration.site_path.should == "site"
   end
 
 end

@@ -10,5 +10,6 @@ Spec::Runner.configure do |config|
 end
 
 def setup_staticmatic
+  FileUtils.rm_r(TEST_SITE_PATH, :force => true)
   @staticmatic = StaticMatic::Base.new(TEST_SITE_PATH)
 end
