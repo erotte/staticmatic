@@ -20,9 +20,8 @@ module StaticMatic
       @current_page = nil
       @current_file_stack = []
       @base_dir = base_dir
-      p configuration
       @src_dir = File.join(@base_dir, "src")
-      @site_dir = File.join(@base_dir, "site")
+      @site_dir = File.join(@base_dir, configuration.site_path)
 
       if File.exists?(File.join(@src_dir, "layouts", "application.haml"))
         puts "DEPRECATION: layouts/application.haml will be renamed to layouts/default.haml in 0.12.0"
@@ -33,8 +32,8 @@ module StaticMatic
       
       @scope = Object.new
       @scope.instance_variable_set("@staticmatic", self)
-      
       load_configuration      
+      
       configure_compass
 
       load_helpers

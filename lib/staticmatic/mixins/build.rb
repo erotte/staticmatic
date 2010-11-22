@@ -44,6 +44,6 @@ module StaticMatic::BuildMixin
       f << content
     end
     
-    puts "created #{path}"
+    puts "created #{path}!"
   end
 end
