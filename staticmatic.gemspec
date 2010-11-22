@@ -65,7 +65,6 @@ Gem::Specification.new do |s|
     "spec/spec_helper.rb",
     "spec/template_error_spec.rb",
     "staticmatic.gemspec",
-    "website/Gemfile",
     "website/config/site.rb",
     "website/site/docs/compass_integration.html",
     "website/site/docs/getting_started.html",
