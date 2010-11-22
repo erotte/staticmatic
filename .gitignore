@@ -1,5 +1,6 @@
 .DS_Store
 .idea
+.bundle
 coverage
 pkg
 spec/sandbox/test_site/site/*
